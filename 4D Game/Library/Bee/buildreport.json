@@ -1,0 +1,20 @@
+{
+"instructions_readme": "1) Open Chrome, 2) go to chrome://tracing, 3) click Load, 4) navigate to this file.",
+
+"traceEvents":[
+{ "pid": "Unity", "ph":"M", "name": "process_name", "args": {"name": "Unity"} },
+{ "pid": "Unity", "ph":"M", "name": "process_sort_index", "args": {"sort_index": -100} },
+{ "pid": "Unity", "tid": 1, "ph":"M", "name": "thread_name", "args": {"name": ""} },
+{ "pid": "Unity", "tid": 1,"ts": 111412395698.7,"dur": 4191152.8, "ph":"X", "name": "Build player"},
+{ "pid": "Unity", "tid": 1,"ts": 111412396568.4,"dur": 211788.2, "ph":"X", "name": "Preprocess Player"},
+{ "pid": "Unity", "tid": 1,"ts": 111412678492.6,"dur": 3825302.3, "ph":"X", "name": "Prepare For Build"},
+{}
+
+],
+"meta_datetime": "12/18/2022 23:56:59",
+"meta_command_line": "\"C:/Program Files/Unity 2022.1.20f1/Editor/Unity.exe\" -projectpath \"C:\\Users\\fabi2\\OneDrive\\Documents\\GitHub\\4D-Game\\4D Game\" -useHub -hubIPC -cloudEnvironment production -licensingIpc LicenseClient-YWY84i2_BIxuV3nUPz8Hu -hubSessionId 269b0da0-7ef0-11ed-99d6-5b157c99bd43 -accessToken CUFZpRkgOXX3XhO69X2-qZzbeVe3riNfyczbjmOuzbI007f",
+"meta_command_line_args": "C:/Program Files/Unity 2022.1.20f1/Editor/Unity.exe -projectpath C:\\Users\\fabi2\\OneDrive\\Documents\\GitHub\\4D-Game\\4D Game -useHub -hubIPC -cloudEnvironment production -licensingIpc LicenseClient-YWY84i2_BIxuV3nUPz8Hu -hubSessionId 269b0da0-7ef0-11ed-99d6-5b157c99bd43 -accessToken CUFZpRkgOXX3XhO69X2-qZzbeVe3riNfyczbjmOuzbI007f",
+"meta_user_name": "fabi2",
+"meta_os_version": "Microsoft Windows NT 10.0.19045.0",
+"meta_cpu_count": "16"
+}
