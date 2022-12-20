@@ -10,8 +10,11 @@ EditorBuildSettings:
     guid: 8fe135e17e9eefd4c8340420500d1f33
   - enabled: 1
     path: Assets/Scenes/MenuScene.unity
-    guid: 49a3395c630f1a244a302e1d178a15b9
+    guid: d56dc29c3091fd246b4cee654081296f
   - enabled: 1
     path: Assets/Scenes/HyperCube.unity
-    guid: f7b3dd3323774df438e32f8896666efe
+    guid: f17b4c221105ad04db145f1e00b5cc69
+  - enabled: 1
+    path: Assets/Scenes/HyperSphere.unity
+    guid: 433ec98b6071fc540a10bbfd6f9cd500
   m_configObjects: {}
