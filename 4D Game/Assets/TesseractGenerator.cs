@@ -71,13 +71,7 @@ public class TesseractGenerator : MonoBehaviour {
 		ResetVertices();
 	}
 
-  //Vector3 cameraPos = new Vector3(0,0,-6);
 	void Update(){
-    //cameraPos.z+=Input.GetAxis("Mouse ScrollWheel")*2f;
-	//	Camera.main.transform.position = cameraPos;
-    //Camera.main.orthographicSize = -(cameraPos.z+4);
-    //Rotate(Axis4D.yw,0.06f);
-    //Rotate(Axis4D.yz,0);
 		DrawTesseract();
 	}
 
@@ -100,8 +94,6 @@ public class TesseractGenerator : MonoBehaviour {
     GUI.Label (new Rect(15, 155, 80, 20), "ZW");
     rotation[Axis4D.zw] = GUI.HorizontalSlider(new Rect(15, 170, 80, 30), Mathf.Repeat(rotation[Axis4D.zw],360f), 0.0F, 360.0F);
    
-    //Camera.main.orthographic = GUI.Toggle (new Rect(15, 190, 100, 30), Camera.main.orthographic, "Orth Camera");
-
     if(!freezeRotation){
       Rotate(Axis4D.xy,0.1f);
       Rotate(Axis4D.xz,0.15f);
