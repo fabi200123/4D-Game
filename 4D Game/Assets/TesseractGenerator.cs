@@ -79,21 +79,36 @@ public class TesseractGenerator : MonoBehaviour {
 
   void OnGUI() {
 
-    freezeRotation = GUI.Toggle (new Rect(14,10,200,20), freezeRotation, "Freeze Rotation");
-    
-    GUI.Label (new Rect(15, 25, 80, 20), "XY");
-    rotation[Axis4D.xy] = GUI.HorizontalSlider(new Rect(15, 40, 80, 30), Mathf.Repeat(rotation[Axis4D.xy],360f), 0.0F, 360.0F);
-    GUI.Label (new Rect(15, 51, 80, 20), "XZ");
-    rotation[Axis4D.xz] = GUI.HorizontalSlider(new Rect(15, 66, 80, 30), Mathf.Repeat(rotation[Axis4D.xz],360f), 0.0F, 360.0F);
-    GUI.Label (new Rect(15, 77, 80, 20), "XW");
-    rotation[Axis4D.xw] = GUI.HorizontalSlider(new Rect(15, 92, 80, 30), Mathf.Repeat(rotation[Axis4D.xw],360f), 0.0F, 360.0F);
-    GUI.Label (new Rect(15, 103, 80, 20), "YZ");
-    rotation[Axis4D.yz] = GUI.HorizontalSlider(new Rect(15, 118, 80, 30), Mathf.Repeat(rotation[Axis4D.yz],360f), 0.0F, 360.0F);
-    GUI.Label (new Rect(15, 129, 80, 20), "YW");
-    rotation[Axis4D.yw] = GUI.HorizontalSlider(new Rect(15, 144, 80, 30), Mathf.Repeat(rotation[Axis4D.yw],360f), 0.0F, 360.0F);
-    GUI.Label (new Rect(15, 155, 80, 20), "ZW");
-    rotation[Axis4D.zw] = GUI.HorizontalSlider(new Rect(15, 170, 80, 30), Mathf.Repeat(rotation[Axis4D.zw],360f), 0.0F, 360.0F);
-   
+	GUIStyle style = new GUIStyle();
+	style.fixedHeight = 60;
+	style.fixedWidth = 60;
+	style.fontSize = 60;
+	style.fontStyle = FontStyle.Bold;
+	style.normal.textColor = Color.white;
+	
+    freezeRotation = GUI.Toggle (new Rect(350,740,600,70), freezeRotation, "Freeze Rotation", style);
+
+	GUI.skin.horizontalSlider.fixedHeight = 30;
+	GUI.skin.horizontalSliderThumb.fixedHeight = 30;
+	GUI.skin.label.fontSize = 40;
+	
+    GUI.Label (new Rect(350, 100, 500,40), "XY");
+    rotation[Axis4D.xy] = GUI.HorizontalSlider(new Rect(350, 140, 500,40), Mathf.Repeat(rotation[Axis4D.xy],360f), 0.0F, 360.0F);
+	GUI.skin.label.fontSize = 40;
+    GUI.Label (new Rect(350, 200, 500,40), "XZ");
+    rotation[Axis4D.xz] = GUI.HorizontalSlider(new Rect(350, 240, 500,40), Mathf.Repeat(rotation[Axis4D.xz],360f), 0.0F, 360.0F);
+	GUI.skin.label.fontSize = 40;
+    GUI.Label (new Rect(350, 300, 500,40), "XW");
+    rotation[Axis4D.xw] = GUI.HorizontalSlider(new Rect(350, 340, 500,40), Mathf.Repeat(rotation[Axis4D.xw],360f), 0.0F, 360.0F);
+	GUI.skin.label.fontSize = 40;
+    GUI.Label (new Rect(350, 400, 500,40), "YZ");
+    rotation[Axis4D.yz] = GUI.HorizontalSlider(new Rect(350, 440, 500,40), Mathf.Repeat(rotation[Axis4D.yz],360f), 0.0F, 360.0F);
+	GUI.skin.label.fontSize = 40;
+    GUI.Label (new Rect(350, 500, 500,40), "YW");
+    rotation[Axis4D.yw] = GUI.HorizontalSlider(new Rect(350, 540, 500,40), Mathf.Repeat(rotation[Axis4D.yw],360f), 0.0F, 360.0F);
+	GUI.skin.label.fontSize = 40;
+    GUI.Label (new Rect(350, 600, 500,40), "ZW");
+    rotation[Axis4D.zw] = GUI.HorizontalSlider(new Rect(350, 640, 500,40), Mathf.Repeat(rotation[Axis4D.zw],360f), 0.0F, 360.0F);
     if(!freezeRotation){
       Rotate(Axis4D.xy,0.1f);
       Rotate(Axis4D.xz,0.15f);
