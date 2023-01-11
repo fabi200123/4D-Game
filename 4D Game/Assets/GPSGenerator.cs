@@ -2,14 +2,19 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using System;
+using UnityEngine.UI;
+using UnityEngine.Android;
+using UnityEditor;
 
 [RequireComponent (typeof (MeshFilter))]
 [RequireComponent (typeof (MeshRenderer))]
 
 
-public class TesseractGenerator : MonoBehaviour {
-  MeshFilter meshFilter;
+public class GPSGenerator : MonoBehaviour {
+  	MeshFilter meshFilter;
 	Mesh mesh;
+
+	float last_lat, last_lon, last_alt;
 
 	public List<Vector4> originalVerts;
 	public List<Vector4> rotatedVerts;
@@ -22,9 +27,21 @@ public class TesseractGenerator : MonoBehaviour {
 
 	public List<Axis4D> rotationOrder;
 	public Dictionary<Axis4D,float> rotation;
-	
+	public Text GPSStatus;
+    public Text latitudeValue;
+    public Text longitudeValue;
+    public Text altitudeValue;
 	
 	void Start () {
+		#if UNITY_ANDROID
+            if (!Permission.HasUserAuthorizedPermission (Permission.FineLocation))
+            {
+                Permission.RequestUserPermission (Permission.FineLocation);
+            }
+        #elif UNITY_IOS
+            PlayerSettings.iOS.locationUsageDescription = "Details to use location";
+        #endif
+		StartCoroutine(GPSLoc());
 		rotationOrder = new List<Axis4D>();
 		rotationOrder.Add(Axis4D.yz);
 		rotationOrder.Add(Axis4D.xw);
@@ -72,55 +89,71 @@ public class TesseractGenerator : MonoBehaviour {
 		ResetVertices();
 	}
 
+	IEnumerator GPSLoc(){
+        // check if user has location service enabled...
+        if(!Input.location.isEnabledByUser)
+            yield break;
+
+        // start service before querying location
+        Input.location.Start();
+
+        //wait until service initialize
+        int maxWait = 20;
+        while(Input.location.status == LocationServiceStatus.Initializing && maxWait > 0){
+            yield return new WaitForSeconds(1);
+            maxWait--;
+        }
+
+        // service did not init in 20 sec
+        if(maxWait < 1){
+            GPSStatus.text = "Timed out";
+            yield break;
+        }
+
+        if(Input.location.status == LocationServiceStatus.Failed){
+            GPSStatus.text = "Unable to determine device location";
+            yield break;
+        }
+        else {
+            // Acces granted
+            GPSStatus.text = "Running";
+            InvokeRepeating("UpdateGPSData", 0.5f, 1f);
+        } // end of GPSLoc
+    }
+    // Update is called once per frame
+    void UpdateGPSData()
+    {
+        if(Input.location.status == LocationServiceStatus.Running){
+            // Access granted to GPS values and it has been init
+            GPSStatus.text = "Running";
+            latitudeValue.text = Input.location.lastData.latitude.ToString();
+            longitudeValue.text = Input.location.lastData.longitude.ToString();
+            altitudeValue.text = Input.location.lastData.altitude.ToString();
+			float lat = float.Parse(latitudeValue.text.ToString(), System.Globalization.NumberStyles.Float);
+			float lon = float.Parse(longitudeValue.text.ToString(), System.Globalization.NumberStyles.Float);
+			float alt = float.Parse(altitudeValue.text.ToString(), System.Globalization.NumberStyles.Float);
+			if(alt != last_alt && lon != last_lon && lat != last_lat){
+			Rotate(Axis4D.xy,lat);
+			Rotate(Axis4D.xz,lon);
+			Rotate(Axis4D.xw,alt);
+			Rotate(Axis4D.yw,lat);
+			Rotate(Axis4D.yz,lon);
+			Rotate(Axis4D.zw,alt);
+			ApplyRotationToVerts();
+			last_lat = lat;
+			last_lon = lon;
+			last_alt = alt;
+			}
+        }
+        else{
+            GPSStatus.text = "STOPPED";
+            // service is stopped
+        }
+    } //End of UpdateGPSData
+
 	void Update(){
 		DrawTesseract();
 	}
-
-  bool freezeRotation = false;
-
-  void OnGUI() {
-
-	GUIStyle style = new GUIStyle();
-	style.fixedHeight = 60;
-	style.fixedWidth = 60;
-	style.fontSize = 60;
-	style.fontStyle = FontStyle.Bold;
-	style.normal.textColor = Color.white;
-	
-    freezeRotation = GUI.Toggle (new Rect(350,740,600,70), freezeRotation, "Freeze Rotation", style);
-
-	GUI.skin.horizontalSlider.fixedHeight = 30;
-	GUI.skin.horizontalSliderThumb.fixedHeight = 30;
-	GUI.skin.label.fontSize = 40;
-	
-    GUI.Label (new Rect(350, 100, 500,40), "XY");
-    rotation[Axis4D.xy] = GUI.HorizontalSlider(new Rect(350, 140, 500,40), Mathf.Repeat(rotation[Axis4D.xy],360f), 0.0F, 360.0F);
-	GUI.skin.label.fontSize = 40;
-    GUI.Label (new Rect(350, 200, 500,40), "XZ");
-    rotation[Axis4D.xz] = GUI.HorizontalSlider(new Rect(350, 240, 500,40), Mathf.Repeat(rotation[Axis4D.xz],360f), 0.0F, 360.0F);
-	GUI.skin.label.fontSize = 40;
-    GUI.Label (new Rect(350, 300, 500,40), "XW");
-    rotation[Axis4D.xw] = GUI.HorizontalSlider(new Rect(350, 340, 500,40), Mathf.Repeat(rotation[Axis4D.xw],360f), 0.0F, 360.0F);
-	GUI.skin.label.fontSize = 40;
-    GUI.Label (new Rect(350, 400, 500,40), "YZ");
-    rotation[Axis4D.yz] = GUI.HorizontalSlider(new Rect(350, 440, 500,40), Mathf.Repeat(rotation[Axis4D.yz],360f), 0.0F, 360.0F);
-	GUI.skin.label.fontSize = 40;
-    GUI.Label (new Rect(350, 500, 500,40), "YW");
-    rotation[Axis4D.yw] = GUI.HorizontalSlider(new Rect(350, 540, 500,40), Mathf.Repeat(rotation[Axis4D.yw],360f), 0.0F, 360.0F);
-	GUI.skin.label.fontSize = 40;
-    GUI.Label (new Rect(350, 600, 500,40), "ZW");
-    rotation[Axis4D.zw] = GUI.HorizontalSlider(new Rect(350, 640, 500,40), Mathf.Repeat(rotation[Axis4D.zw],360f), 0.0F, 360.0F);
-    if(!freezeRotation){
-      Rotate(Axis4D.xy,0.1f);
-      Rotate(Axis4D.xz,0.15f);
-      Rotate(Axis4D.xw,0.6f);
-      Rotate(Axis4D.yw,0.3f);
-      Rotate(Axis4D.yz,0.45f);
-      Rotate(Axis4D.zw,0.5f);
-    }
-
-    ApplyRotationToVerts();
-  }
 
 	void DrawTesseract () {
 		mesh.Clear();
@@ -128,38 +161,38 @@ public class TesseractGenerator : MonoBehaviour {
 		tris = new List<int>();
 		uvs = new List<Vector2>();
 
-    CreatePlane(rotatedVerts[0],rotatedVerts[1],rotatedVerts[5],rotatedVerts[4]);
-    CreatePlane(rotatedVerts[0],rotatedVerts[2],rotatedVerts[6],rotatedVerts[4]);
-    CreatePlane(rotatedVerts[0],rotatedVerts[8],rotatedVerts[12],rotatedVerts[4]);
-    CreatePlane(rotatedVerts[0],rotatedVerts[2],rotatedVerts[3],rotatedVerts[1]);
-    CreatePlane(rotatedVerts[0],rotatedVerts[1],rotatedVerts[9],rotatedVerts[8]);
-    CreatePlane(rotatedVerts[0],rotatedVerts[2],rotatedVerts[10],rotatedVerts[8]);
+		CreatePlane(rotatedVerts[0],rotatedVerts[1],rotatedVerts[5],rotatedVerts[4]);
+		CreatePlane(rotatedVerts[0],rotatedVerts[2],rotatedVerts[6],rotatedVerts[4]);
+		CreatePlane(rotatedVerts[0],rotatedVerts[8],rotatedVerts[12],rotatedVerts[4]);
+		CreatePlane(rotatedVerts[0],rotatedVerts[2],rotatedVerts[3],rotatedVerts[1]);
+		CreatePlane(rotatedVerts[0],rotatedVerts[1],rotatedVerts[9],rotatedVerts[8]);
+		CreatePlane(rotatedVerts[0],rotatedVerts[2],rotatedVerts[10],rotatedVerts[8]);
 
-    CreatePlane(rotatedVerts[1],rotatedVerts[3],rotatedVerts[7],rotatedVerts[5]);
-    CreatePlane(rotatedVerts[1],rotatedVerts[9],rotatedVerts[13],rotatedVerts[5]);
-    CreatePlane(rotatedVerts[1],rotatedVerts[3],rotatedVerts[9],rotatedVerts[11]);
+		CreatePlane(rotatedVerts[1],rotatedVerts[3],rotatedVerts[7],rotatedVerts[5]);
+		CreatePlane(rotatedVerts[1],rotatedVerts[9],rotatedVerts[13],rotatedVerts[5]);
+		CreatePlane(rotatedVerts[1],rotatedVerts[3],rotatedVerts[9],rotatedVerts[11]);
 
-    CreatePlane(rotatedVerts[2],rotatedVerts[3],rotatedVerts[7],rotatedVerts[6]);
-    CreatePlane(rotatedVerts[2],rotatedVerts[3],rotatedVerts[10],rotatedVerts[11]);
-    CreatePlane(rotatedVerts[2],rotatedVerts[10],rotatedVerts[14],rotatedVerts[6]);
+		CreatePlane(rotatedVerts[2],rotatedVerts[3],rotatedVerts[7],rotatedVerts[6]);
+		CreatePlane(rotatedVerts[2],rotatedVerts[3],rotatedVerts[10],rotatedVerts[11]);
+		CreatePlane(rotatedVerts[2],rotatedVerts[10],rotatedVerts[14],rotatedVerts[6]);
 
-    CreatePlane(rotatedVerts[3],rotatedVerts[11],rotatedVerts[15],rotatedVerts[7]);
+		CreatePlane(rotatedVerts[3],rotatedVerts[11],rotatedVerts[15],rotatedVerts[7]);
 
-    CreatePlane(rotatedVerts[4],rotatedVerts[12],rotatedVerts[13],rotatedVerts[5]);
-    CreatePlane(rotatedVerts[4],rotatedVerts[6],rotatedVerts[14],rotatedVerts[12]);
-    CreatePlane(rotatedVerts[4],rotatedVerts[6],rotatedVerts[7],rotatedVerts[5]);
+		CreatePlane(rotatedVerts[4],rotatedVerts[12],rotatedVerts[13],rotatedVerts[5]);
+		CreatePlane(rotatedVerts[4],rotatedVerts[6],rotatedVerts[14],rotatedVerts[12]);
+		CreatePlane(rotatedVerts[4],rotatedVerts[6],rotatedVerts[7],rotatedVerts[5]);
 
-    CreatePlane(rotatedVerts[5],rotatedVerts[7],rotatedVerts[15],rotatedVerts[13]);
+		CreatePlane(rotatedVerts[5],rotatedVerts[7],rotatedVerts[15],rotatedVerts[13]);
 
-    CreatePlane(rotatedVerts[6],rotatedVerts[7],rotatedVerts[14],rotatedVerts[15]);
+		CreatePlane(rotatedVerts[6],rotatedVerts[7],rotatedVerts[14],rotatedVerts[15]);
 
-    CreatePlane(rotatedVerts[8],rotatedVerts[10],rotatedVerts[14],rotatedVerts[12]);
-    CreatePlane(rotatedVerts[8],rotatedVerts[9],rotatedVerts[13],rotatedVerts[12]);
-    CreatePlane(rotatedVerts[8],rotatedVerts[9],rotatedVerts[10],rotatedVerts[11]);
+		CreatePlane(rotatedVerts[8],rotatedVerts[10],rotatedVerts[14],rotatedVerts[12]);
+		CreatePlane(rotatedVerts[8],rotatedVerts[9],rotatedVerts[13],rotatedVerts[12]);
+		CreatePlane(rotatedVerts[8],rotatedVerts[9],rotatedVerts[10],rotatedVerts[11]);
 
-    CreatePlane(rotatedVerts[9],rotatedVerts[11],rotatedVerts[15],rotatedVerts[13]);
+		CreatePlane(rotatedVerts[9],rotatedVerts[11],rotatedVerts[15],rotatedVerts[13]);
 
-    CreatePlane(rotatedVerts[10],rotatedVerts[11],rotatedVerts[15],rotatedVerts[14]);
+		CreatePlane(rotatedVerts[10],rotatedVerts[11],rotatedVerts[15],rotatedVerts[14]);
 
 	}
 
@@ -307,13 +340,4 @@ public class TesseractGenerator : MonoBehaviour {
       Gizmos.DrawSphere(rotatedVerts[i], 0.1f);
     }  
   }
-}
-
-public enum Axis4D {
-	xy,
-	xz,
-	xw,
-	yz,
-	yw,
-	zw,
 }

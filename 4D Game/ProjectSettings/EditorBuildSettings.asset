@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FiveCell.unity
     guid: cef6d0136cf2a0644b8453f2c047a784
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: a60a88f06bdaa554990606ebd66958f4,
+      type: 2}
+    com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000,
+      guid: 88430378f48322d468099a062d154125, type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000,
+      guid: 9680222bad7b9fb4bbed4208a1736ea6, type: 2}
