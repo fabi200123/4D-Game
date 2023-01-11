@@ -5,29 +5,29 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638084475083573237
-    m_Hash: 3901630993
+      ticks: 638090727111092672
+    m_Hash: 3664784034
   m_LockFileStatus:
     m_FilePath: C:/Users/fabi2/OneDrive/Documents/GitHub/4D-Game/4D Game/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638084475083573237
-    m_Hash: 2580337756
+      ticks: 638090727119234921
+    m_Hash: 3819892097
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
 m_ProjectPath: C:/Users/fabi2/OneDrive/Documents/GitHub/4D-Game/4D Game/Packages
-m_EditorVersion: 2022.1.20f1 (01d83b40d570)
+m_EditorVersion: 2021.3.16f1 (4016570cf34f)
 m_ResolvedPackages:
-- packageId: com.unity.collab-proxy@1.17.2
+- packageId: com.unity.collab-proxy@1.17.7
   testable: 0
   isDirectDependency: 1
-  version: 1.17.2
+  version: 1.17.7
   source: 1
-  resolvedPath: C:\Users\fabi2\OneDrive\Documents\GitHub\4D-Game\4D Game\Library\PackageCache\com.unity.collab-proxy@1.17.2
+  resolvedPath: C:\Users\fabi2\OneDrive\Documents\GitHub\4D-Game\4D Game\Library\PackageCache\com.unity.collab-proxy@1.17.7
   assetPath: Packages/com.unity.collab-proxy
   name: com.unity.collab-proxy
   displayName: Version Control
@@ -41,7 +41,7 @@ m_ResolvedPackages:
     or Plastic SCM for Unity (beta) in the Unity editor. To use Plastic SCM for Unity
     (beta), a Plastic SCM subscription is required. Learn more about how you can
     get started for free by visiting plasticscm.com.
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -108,8 +108,6 @@ m_ResolvedPackages:
     - 2.1.0-preview.5
     - 2.1.0-preview.6
     compatible:
-    - 1.17.2
-    - 1.17.6
     - 1.17.7
     - 2.0.0-preview.6
     - 2.0.0-preview.8
@@ -127,7 +125,7 @@ m_ResolvedPackages:
     version: 1.0.1
   resolvedDependencies:
   - name: com.unity.services.core
-    version: 1.4.3
+    version: 1.6.0
   - name: com.unity.modules.unitywebrequest
     version: 1.0.0
   - name: com.unity.nuget.newtonsoft-json
@@ -155,95 +153,26 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 637937432480000000
+  datePublishedTicks: 638036787040000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.cloud.collaborate.git
-    revision: 14d129dcc778f8ea2fdf9d0240b47924e4f0dbb1
+    revision: 1641a631fd39029595decb52bdfb641b32ed194c
     path: 
   unityLifecycle:
-    version: 1.17.2
+    version: 1.17.7
     nextVersion: 
-- packageId: com.unity.feature.mobile@1.0.0
+- packageId: com.unity.ide.rider@3.0.18
   testable: 0
   isDirectDependency: 1
-  version: 1.0.0
-  source: 2
-  resolvedPath: C:\Users\fabi2\OneDrive\Documents\GitHub\4D-Game\4D Game\Library\PackageCache\com.unity.feature.mobile@1.0.0
-  assetPath: Packages/com.unity.feature.mobile
-  name: com.unity.feature.mobile
-  displayName: Mobile
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: feature
-  description: Optimize your apps for mobile devices and provide a performant experience
-    for your users. Includes utilities for debugging on device and support for notifications.
-  status: 4
-  errors: []
-  versions:
-    all:
-    - 1.0.0
-    compatible:
-    - 1.0.0
-    verified: 1.0.0
-  dependencies:
-  - name: com.unity.mobile.android-logcat
-    version: default
-  - name: com.unity.adaptiveperformance
-    version: default
-  - name: com.unity.mobile.notifications
-    version: default
-  resolvedDependencies:
-  - name: com.unity.mobile.android-logcat
-    version: 1.3.2
-  - name: com.unity.adaptiveperformance
-    version: 4.0.0
-  - name: com.unity.subsystemregistration
-    version: 1.1.1
-  - name: com.unity.modules.subsystems
-    version: 1.0.0
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  - name: com.unity.profiling.core
-    version: 1.0.2
-  - name: com.unity.mobile.notifications
-    version: 2.0.2
-  - name: com.unity.modules.androidjni
-    version: 1.0.0
-  keywords: []
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-  hideInEditor: 0
-  isAssetStorePackage: 0
-  datePublishedTicks: 0
-  documentationUrl: 
-  hasRepository: 0
-  repository:
-    type: 
-    url: 
-    revision: 
-    path: 
-  unityLifecycle:
-    version: 1.0.0
-    nextVersion: 
-- packageId: com.unity.ide.rider@3.0.15
-  testable: 0
-  isDirectDependency: 1
-  version: 3.0.15
+  version: 3.0.18
   source: 1
-  resolvedPath: C:\Users\fabi2\OneDrive\Documents\GitHub\4D-Game\4D Game\Library\PackageCache\com.unity.ide.rider@3.0.15
+  resolvedPath: C:\Users\fabi2\OneDrive\Documents\GitHub\4D-Game\4D Game\Library\PackageCache\com.unity.ide.rider@3.0.18
   assetPath: Packages/com.unity.ide.rider
   name: com.unity.ide.rider
   displayName: JetBrains Rider Editor
@@ -256,7 +185,7 @@ m_ResolvedPackages:
   description: The JetBrains Rider Editor package provides an integration for using
     the JetBrains Rider IDE as a code editor for Unity. It adds support for generating
     .csproj files for code completion and auto-discovery of installations.
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -293,11 +222,12 @@ m_ResolvedPackages:
     - 3.0.15
     - 3.0.16
     - 3.0.17
+    - 3.0.18
     compatible:
-    - 3.0.15
     - 3.0.16
     - 3.0.17
-    verified: 3.0.17
+    - 3.0.18
+    verified: 3.0.18
   dependencies:
   - name: com.unity.ext.nunit
     version: 1.0.6
@@ -312,25 +242,26 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 637914298700000000
-  documentationUrl: 
+  datePublishedTicks: 638088746970000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.ide.rider@3.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.rider.git
-    revision: b61ff0378932fdf03b5891e09c91728337de674c
+    revision: b40b39e6834c2915637f431d002d1f3dd8ec9ce5
     path: 
   unityLifecycle:
-    version: 3.0.15
+    version: 3.0.16
     nextVersion: 
-- packageId: com.unity.ide.visualstudio@2.0.16
+- packageId: com.unity.ide.visualstudio@2.0.17
   testable: 0
   isDirectDependency: 1
-  version: 2.0.16
+  version: 2.0.17
   source: 1
-  resolvedPath: C:\Users\fabi2\OneDrive\Documents\GitHub\4D-Game\4D Game\Library\PackageCache\com.unity.ide.visualstudio@2.0.16
+  resolvedPath: C:\Users\fabi2\OneDrive\Documents\GitHub\4D-Game\4D Game\Library\PackageCache\com.unity.ide.visualstudio@2.0.17
   assetPath: Packages/com.unity.ide.visualstudio
   name: com.unity.ide.visualstudio
   displayName: Visual Studio Editor
@@ -343,7 +274,7 @@ m_ResolvedPackages:
   description: Code editor integration for supporting Visual Studio as code editor
     for unity. Adds support for generating csproj files for intellisense purposes,
     auto discovery of installations, etc.
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -391,15 +322,16 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 637914298680000000
-  documentationUrl: 
+  datePublishedTicks: 638059987360000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.ide.visualstudio@2.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.visualstudio.git
-    revision: c01855ef6461b821ab0226135e96a4ee86de96be
+    revision: 1f126893bfb18ea9661fb15771613e841467073c
     path: 
   unityLifecycle:
     version: 2.0.16
@@ -422,7 +354,7 @@ m_ResolvedPackages:
   description: Code editor integration for supporting Visual Studio Code as code
     editor for unity. Adds support for generating csproj files for intellisense purposes,
     auto discovery of installations, etc.
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -452,6 +384,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 637800255360000000
@@ -464,135 +397,6 @@ m_ResolvedPackages:
     path: 
   unityLifecycle:
     version: 1.2.5
-    nextVersion: 
-- packageId: com.unity.probuilder@5.0.6
-  testable: 0
-  isDirectDependency: 1
-  version: 5.0.6
-  source: 1
-  resolvedPath: C:\Users\fabi2\OneDrive\Documents\GitHub\4D-Game\4D Game\Library\PackageCache\com.unity.probuilder@5.0.6
-  assetPath: Packages/com.unity.probuilder
-  name: com.unity.probuilder
-  displayName: ProBuilder
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: asset
-  description: 'Build, edit, and texture custom geometry in Unity. Use ProBuilder
-    for in-scene level design, prototyping, collision meshes, all with on-the-fly
-    play-testing.
-
-
-    Advanced features include UV editing, vertex colors, parametric
-    shapes, and texture blending. With ProBuilder''s model export feature it''s easy
-    to tweak your levels in any external 3D modelling suite.
-
-
-    If you are using
-    URP/HDRP, be careful to also import the corresponding sample project in the section
-    below to get the proper materials.'
-  status: 4
-  errors: []
-  versions:
-    all:
-    - 3.0.0
-    - 3.0.1
-    - 3.0.2
-    - 3.0.3
-    - 3.0.6
-    - 3.0.8
-    - 3.0.9
-    - 3.10.1
-    - 4.0.2
-    - 4.0.3
-    - 4.0.4
-    - 4.0.5
-    - 4.1.0
-    - 4.1.2
-    - 4.2.1
-    - 4.2.2-preview.1
-    - 4.2.2-preview.2
-    - 4.2.3
-    - 4.2.4-preview.0
-    - 4.3.0-preview.0
-    - 4.3.0-preview.1
-    - 4.3.0-preview.2
-    - 4.3.0-preview.4
-    - 4.3.0-preview.6
-    - 4.3.0-preview.7
-    - 4.3.0-preview.8
-    - 4.3.0-preview.9
-    - 4.3.1
-    - 4.4.0-preview.1
-    - 4.4.0
-    - 4.5.0
-    - 4.5.2
-    - 5.0.0-pre.7
-    - 5.0.0-pre.10
-    - 5.0.1
-    - 5.0.3
-    - 5.0.4
-    - 5.0.6
-    compatible:
-    - 5.0.4
-    - 5.0.6
-    verified: 5.0.6
-  dependencies:
-  - name: com.unity.settings-manager
-    version: 1.0.3
-  - name: com.unity.modules.physics
-    version: 1.0.0
-  - name: com.unity.modules.imgui
-    version: 1.0.0
-  resolvedDependencies:
-  - name: com.unity.settings-manager
-    version: 2.0.1
-  - name: com.unity.modules.physics
-    version: 1.0.0
-  - name: com.unity.modules.imgui
-    version: 1.0.0
-  keywords:
-  - 3d
-  - model
-  - mesh
-  - modeling
-  - geometry
-  - shape
-  - cube
-  - blender
-  - max
-  - maya
-  - fbx
-  - obj
-  - level
-  - design
-  - block
-  - greybox
-  - graybox
-  - whitebox
-  - prototype
-  - probuilder
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-  hideInEditor: 0
-  isAssetStorePackage: 0
-  datePublishedTicks: 637928847600000000
-  documentationUrl: 
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.com/Unity-Technologies/com.unity.probuilder.git
-    revision: a2e0f7904211f195c1c7661cdbed49fdc4a4130d
-    path: 
-  unityLifecycle:
-    version: 5.0.4
     nextVersion: 
 - packageId: com.unity.test-framework@1.1.33
   testable: 0
@@ -610,7 +414,7 @@ m_ResolvedPackages:
   category: Unity Test Framework
   type: asset
   description: Test framework for running Edit mode and Play mode tests in Unity.
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -656,6 +460,7 @@ m_ResolvedPackages:
     - 2.0.1-pre.12
     - 2.0.1-pre.18
     compatible:
+    - 1.1.31
     - 1.1.33
     - 1.3.0
     - 1.3.1
@@ -689,6 +494,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 637938212700000000
@@ -700,7 +506,7 @@ m_ResolvedPackages:
     revision: 34a4d423d64926635eb36d3bb86276179cc186e1
     path: 
   unityLifecycle:
-    version: 1.1.33
+    version: 1.1.31
     nextVersion: 
 - packageId: com.unity.textmeshpro@3.0.6
   testable: 0
@@ -737,7 +543,7 @@ m_ResolvedPackages:
     Great performance. Since the geometry created by TextMeshPro
     uses two triangles per character just like Unity''s text components, this improved
     visual quality and flexibility comes at no additional performance cost.'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -832,7 +638,6 @@ m_ResolvedPackages:
     - 3.2.0-pre.2
     - 3.2.0-pre.3
     - 3.2.0-pre.4
-    - 4.0.0-pre.1
     verified: 3.0.6
   dependencies:
   - name: com.unity.ugui
@@ -857,6 +662,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 637547111200000000
@@ -887,7 +693,7 @@ m_ResolvedPackages:
   type: asset
   description: Use Unity Timeline to create cinematic content, game-play sequences,
     audio sequences, and complex particle effects.
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -966,10 +772,14 @@ m_ResolvedPackages:
     - 1.7.2
     - 1.8.0
     compatible:
+    - 1.6.4
+    - 1.7.0-pre.1
+    - 1.7.0-pre.2
+    - 1.7.0
     - 1.7.1
     - 1.7.2
     - 1.8.0
-    verified: 1.7.2
+    verified: 1.6.4
   dependencies:
   - name: com.unity.modules.director
     version: 1.0.0
@@ -1001,6 +811,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 637824211470000000
@@ -1012,7 +823,112 @@ m_ResolvedPackages:
     revision: 9cec37f449d04026a6c454de9e1bf6f34672764e
     path: 
   unityLifecycle:
-    version: 1.7.1
+    version: 1.6.4
+    nextVersion: 
+- packageId: com.unity.toolchain.win-x86_64-linux-x86_64@2.0.4
+  testable: 0
+  isDirectDependency: 1
+  version: 2.0.4
+  source: 1
+  resolvedPath: C:\Users\fabi2\OneDrive\Documents\GitHub\4D-Game\4D Game\Library\PackageCache\com.unity.toolchain.win-x86_64-linux-x86_64@2.0.4
+  assetPath: Packages/com.unity.toolchain.win-x86_64-linux-x86_64
+  name: com.unity.toolchain.win-x86_64-linux-x86_64
+  displayName: Toolchain Win Linux x64
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: asset
+  description: Cross-compilation toolchain to build player target Linux x86_64 on
+    host Windows x86_64
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 0.1.4-preview
+    - 0.1.5-preview
+    - 0.1.6-preview
+    - 0.1.7-preview
+    - 0.1.8-preview
+    - 0.1.9-preview
+    - 0.1.10-preview
+    - 0.1.11-preview
+    - 0.1.13-preview
+    - 0.1.14-preview
+    - 0.1.15-preview
+    - 0.1.16-preview
+    - 0.1.17-preview
+    - 0.1.18-preview
+    - 0.1.19-preview
+    - 0.1.20-preview
+    - 0.1.21-preview
+    - 1.0.0
+    - 2.0.0
+    - 2.0.1
+    - 2.0.2
+    - 2.0.3
+    - 2.0.4
+    compatible:
+    - 0.1.4-preview
+    - 0.1.5-preview
+    - 0.1.6-preview
+    - 0.1.7-preview
+    - 0.1.8-preview
+    - 0.1.9-preview
+    - 0.1.10-preview
+    - 0.1.11-preview
+    - 0.1.13-preview
+    - 0.1.14-preview
+    - 0.1.15-preview
+    - 0.1.16-preview
+    - 0.1.17-preview
+    - 0.1.18-preview
+    - 0.1.19-preview
+    - 0.1.20-preview
+    - 0.1.21-preview
+    - 1.0.0
+    - 2.0.0
+    - 2.0.1
+    - 2.0.2
+    - 2.0.3
+    - 2.0.4
+    verified: 
+  dependencies:
+  - name: com.unity.sysroot
+    version: 2.0.5
+  - name: com.unity.sysroot.linux-x86_64
+    version: 2.0.4
+  resolvedDependencies:
+  - name: com.unity.sysroot
+    version: 2.0.5
+  - name: com.unity.sysroot.linux-x86_64
+    version: 2.0.4
+  keywords:
+  - toolchain
+  - windows
+  - linux
+  - cross-compilation
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 638067882890000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.toolchain.win-x86_64-linux-x86_64@2.0/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.com/Unity-Technologies/com.unity.sysroot.git
+    revision: 06af5d019fed618daef07b5db278be147aed574b
+    path: 
+  unityLifecycle:
+    version: 
     nextVersion: 
 - packageId: com.unity.ugui@1.0.0
   testable: 0
@@ -1033,7 +949,7 @@ m_ResolvedPackages:
     and applications. It is a GameObject-based UI system that uses Components and
     the Game View to arrange, position, and style user interfaces. \u200B You cannot
     use Unity UI to create or change user interfaces in the Unity Editor."
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -1063,6 +979,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1103,7 +1020,7 @@ m_ResolvedPackages:
 
     Visual scripting is compatible with third-party
     APIs, including most packages, assets and custom libraries.'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -1126,7 +1043,6 @@ m_ResolvedPackages:
     - 1.8.0
     compatible:
     - 1.7.8
-    - 1.8.0-pre.1
     - 1.8.0
     verified: 1.7.8
   dependencies:
@@ -1151,6 +1067,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 637878097330000000
@@ -1181,7 +1098,7 @@ m_ResolvedPackages:
   type: module
   description: 'The AI module implements the path finding features in Unity. Scripting
     API: https://docs.unity3d.com/ScriptReference/UnityEngine.AIModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -1199,6 +1116,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1228,7 +1146,7 @@ m_ResolvedPackages:
   category: 
   type: module
   description: 'AndroidJNI module allows you to call Java code. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.AndroidJNIModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -1246,6 +1164,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1276,7 +1195,7 @@ m_ResolvedPackages:
   type: module
   description: 'The Animation module implements Unity''s animation system. Scripting
     API: https://docs.unity3d.com/ScriptReference/UnityEngine.AnimationModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -1294,6 +1213,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1324,7 +1244,7 @@ m_ResolvedPackages:
   type: module
   description: 'The AssetBundle module implements the AssetBundle class and related
     APIs to load data from AssetBundles. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.AssetBundleModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -1342,6 +1262,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1372,7 +1293,7 @@ m_ResolvedPackages:
   type: module
   description: 'The Audio module implements Unity''s audio system. Scripting API:
     https://docs.unity3d.com/ScriptReference/UnityEngine.AudioModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -1390,6 +1311,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1420,7 +1342,7 @@ m_ResolvedPackages:
   type: module
   description: 'The Cloth module implements cloth physics simulation through the
     Cloth component. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.ClothModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -1442,6 +1364,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1472,7 +1395,7 @@ m_ResolvedPackages:
   type: module
   description: 'The Director module implements the PlayableDirector class. Scripting
     API: https://docs.unity3d.com/ScriptReference/UnityEngine.DirectorModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -1498,6 +1421,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1529,7 +1453,7 @@ m_ResolvedPackages:
   description: 'The ImageConversion module implements the ImageConversion class which
     provides helper methods to convert images from and to PNG, JPEG or EXR formats.
     Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.ImageConversionModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -1547,6 +1471,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1577,7 +1502,7 @@ m_ResolvedPackages:
   type: module
   description: 'The IMGUI module provides Unity''s immediate mode GUI solution for
     creating in-game and editor user interfaces. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.IMGUIModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -1595,6 +1520,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1625,7 +1551,7 @@ m_ResolvedPackages:
   type: module
   description: 'The JSONSerialize module provides the JsonUtility class which lets
     you serialize Unity Objects to JSON format. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.JSONSerializeModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -1643,6 +1569,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1673,7 +1600,7 @@ m_ResolvedPackages:
   type: module
   description: 'The ParticleSystem module implements Unity''s Particle System. Scripting
     API: https://docs.unity3d.com/ScriptReference/UnityEngine.ParticleSystemModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -1691,6 +1618,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1721,7 +1649,7 @@ m_ResolvedPackages:
   type: module
   description: 'The Physics module implements 3D physics in Unity. Scripting API:
     https://docs.unity3d.com/ScriptReference/UnityEngine.PhysicsModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -1739,6 +1667,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1769,7 +1698,7 @@ m_ResolvedPackages:
   type: module
   description: 'The Physics2d module implements 2D physics in Unity. Scripting API:
     https://docs.unity3d.com/ScriptReference/UnityEngine.Physics2DModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -1787,6 +1716,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1817,7 +1747,7 @@ m_ResolvedPackages:
   type: module
   description: 'The ScreenCapture module provides functionality to take screen shots
     using the ScreenCapture class. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.ScreenCaptureModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -1839,6 +1769,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1869,7 +1800,7 @@ m_ResolvedPackages:
   type: module
   description: 'The Terrain module implements Unity''s Terrain rendering engine available
     through the Terrain component. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.TerrainModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -1887,6 +1818,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1917,7 +1849,7 @@ m_ResolvedPackages:
   type: module
   description: 'The TerrainPhysics module connects the Terrain and Physics modules
     by implementing the TerrainCollider component. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.TerrainPhysicsModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -1943,6 +1875,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1972,7 +1905,7 @@ m_ResolvedPackages:
   category: 
   type: module
   description: 'The Tilemap module implements the Tilemap class. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.TilemapModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -1994,6 +1927,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2024,7 +1958,7 @@ m_ResolvedPackages:
   type: module
   description: 'The UI module implements basic components required for Unity''s UI
     system Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UIModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -2042,6 +1976,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2072,7 +2007,7 @@ m_ResolvedPackages:
   type: module
   description: 'The UIElements module implements the UIElements retained mode UI
     framework. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UIElementsModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -2106,6 +2041,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2136,7 +2072,7 @@ m_ResolvedPackages:
   type: module
   description: 'The Umbra module implements Unity''s occlusion culling system. Scripting
     API: https://docs.unity3d.com/ScriptReference/UnityEngine.UmbraModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -2154,6 +2090,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2184,7 +2121,7 @@ m_ResolvedPackages:
   type: module
   description: 'The UnityAnalytics module implements APIs required to use Unity Analytics.
     Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityAnalyticsModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -2210,6 +2147,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2240,7 +2178,7 @@ m_ResolvedPackages:
   type: module
   description: 'The UnityWebRequest module lets you communicate with http services.
     Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityWebRequestModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -2258,6 +2196,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2288,7 +2227,7 @@ m_ResolvedPackages:
   type: module
   description: 'The UnityWebRequestAssetBundle module provides the DownloadHandlerAssetBundle
     class to use UnityWebRequest to download Asset Bundles. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityWebRequestAssetBundleModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -2314,6 +2253,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2344,7 +2284,7 @@ m_ResolvedPackages:
   type: module
   description: 'The UnityWebRequestAudio module provides the DownloadHandlerAudioClip
     class to use UnityWebRequest to download AudioClips. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityWebRequestAudioModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -2370,6 +2310,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2400,7 +2341,7 @@ m_ResolvedPackages:
   type: module
   description: 'The UnityWebRequestTexture module provides the DownloadHandlerTexture
     class to use UnityWebRequest to download Textures. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityWebRequestTextureModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -2426,6 +2367,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2456,7 +2398,7 @@ m_ResolvedPackages:
   type: module
   description: 'The UnityWebRequestWWW module implements the legacy WWW lets you
     communicate with http services. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityWebRequestWWWModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -2498,6 +2440,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2528,7 +2471,7 @@ m_ResolvedPackages:
   type: module
   description: 'The Vehicles module implements vehicle physics simulation through
     the WheelCollider component. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.VehiclesModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -2550,6 +2493,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2580,7 +2524,7 @@ m_ResolvedPackages:
   type: module
   description: 'The Video module lets you play back video files in your content.
     Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.VideoModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -2610,6 +2554,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2640,7 +2585,7 @@ m_ResolvedPackages:
   type: module
   description: 'The VR module implements support for virtual reality devices in Unity.
     Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.VRModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -2672,6 +2617,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2702,7 +2648,7 @@ m_ResolvedPackages:
   type: module
   description: 'The Wind module implements the WindZone component which can affect
     terrain rendering and particle simulations. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.WindModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -2720,6 +2666,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2750,7 +2697,7 @@ m_ResolvedPackages:
   type: module
   description: 'The XR module contains the VR and AR related platform support functionality.
     Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.XRModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -2780,6 +2727,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2810,7 +2758,7 @@ m_ResolvedPackages:
   type: module
   description: 'The Subsystem module contains the definitions and runtime support
     for general subsystems in Unity. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.SubsystemsModule.html'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -2832,6 +2780,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2861,7 +2810,7 @@ m_ResolvedPackages:
   category: 
   type: module
   description: 
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -2891,6 +2840,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2900,6 +2850,177 @@ m_ResolvedPackages:
     type: 
     url: 
     revision: 
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 
+- packageId: com.unity.sysroot@2.0.5
+  testable: 0
+  isDirectDependency: 0
+  version: 2.0.5
+  source: 1
+  resolvedPath: C:\Users\fabi2\OneDrive\Documents\GitHub\4D-Game\4D Game\Library\PackageCache\com.unity.sysroot@2.0.5
+  assetPath: Packages/com.unity.sysroot
+  name: com.unity.sysroot
+  displayName: Sysroot Base
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: asset
+  description: This is the base sysroot package required by all sysroot and toolchain
+    packages
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 0.1.7-preview
+    - 0.1.8-preview
+    - 0.1.9-preview
+    - 0.1.10-preview
+    - 0.1.11-preview
+    - 0.1.12-preview
+    - 0.1.14-preview
+    - 0.1.15-preview
+    - 0.1.16-preview
+    - 0.1.17-preview
+    - 0.1.18-preview
+    - 0.1.19-preview
+    - 1.0.0
+    - 2.0.0
+    - 2.0.2
+    - 2.0.3
+    - 2.0.4
+    - 2.0.5
+    compatible:
+    - 0.1.7-preview
+    - 0.1.8-preview
+    - 0.1.9-preview
+    - 0.1.10-preview
+    - 0.1.11-preview
+    - 0.1.12-preview
+    - 0.1.14-preview
+    - 0.1.15-preview
+    - 0.1.16-preview
+    - 0.1.17-preview
+    - 0.1.18-preview
+    - 0.1.19-preview
+    - 1.0.0
+    - 2.0.0
+    - 2.0.2
+    - 2.0.3
+    - 2.0.4
+    - 2.0.5
+    verified: 
+  dependencies: []
+  resolvedDependencies: []
+  keywords:
+  - unity
+  - linux
+  - sysroot
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 638067882470000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.sysroot@2.0/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.com/Unity-Technologies/com.unity.sysroot.git
+    revision: 06af5d019fed618daef07b5db278be147aed574b
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 
+- packageId: com.unity.sysroot.linux-x86_64@2.0.4
+  testable: 0
+  isDirectDependency: 0
+  version: 2.0.4
+  source: 1
+  resolvedPath: C:\Users\fabi2\OneDrive\Documents\GitHub\4D-Game\4D Game\Library\PackageCache\com.unity.sysroot.linux-x86_64@2.0.4
+  assetPath: Packages/com.unity.sysroot.linux-x86_64
+  name: com.unity.sysroot.linux-x86_64
+  displayName: Sysroot Linux x64
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: asset
+  description: Sysroot used to build unity player for linux x86_64
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 0.1.6-preview
+    - 0.1.7-preview
+    - 0.1.8-preview
+    - 0.1.9-preview
+    - 0.1.10-preview
+    - 0.1.11-preview
+    - 0.1.12-preview
+    - 0.1.13-preview
+    - 0.1.14-preview
+    - 0.1.15-preview
+    - 1.0.0
+    - 2.0.0
+    - 2.0.1
+    - 2.0.2
+    - 2.0.3
+    - 2.0.4
+    compatible:
+    - 0.1.6-preview
+    - 0.1.7-preview
+    - 0.1.8-preview
+    - 0.1.9-preview
+    - 0.1.10-preview
+    - 0.1.11-preview
+    - 0.1.12-preview
+    - 0.1.13-preview
+    - 0.1.14-preview
+    - 0.1.15-preview
+    - 1.0.0
+    - 2.0.0
+    - 2.0.1
+    - 2.0.2
+    - 2.0.3
+    - 2.0.4
+    verified: 
+  dependencies:
+  - name: com.unity.sysroot
+    version: 2.0.5
+  resolvedDependencies:
+  - name: com.unity.sysroot
+    version: 2.0.5
+  keywords:
+  - unity
+  - linux
+  - sysroot
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 638067882520000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.sysroot.linux-x86_64@2.0/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.com/Unity-Technologies/com.unity.sysroot.git
+    revision: 06af5d019fed618daef07b5db278be147aed574b
     path: 
   unityLifecycle:
     version: 
@@ -2921,7 +3042,7 @@ m_ResolvedPackages:
   type: 
   description: Custom version of the nunit package build to work with Unity. Used
     by the Unity Test Framework.
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -2951,6 +3072,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 637429759280000000
@@ -2964,365 +3086,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.6
     nextVersion: 
-- packageId: com.unity.settings-manager@2.0.1
+- packageId: com.unity.services.core@1.6.0
   testable: 0
   isDirectDependency: 0
-  version: 2.0.1
+  version: 1.6.0
   source: 1
-  resolvedPath: C:\Users\fabi2\OneDrive\Documents\GitHub\4D-Game\4D Game\Library\PackageCache\com.unity.settings-manager@2.0.1
-  assetPath: Packages/com.unity.settings-manager
-  name: com.unity.settings-manager
-  displayName: Settings Manager
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: 
-  description: A framework for making any serializable field a setting, complete
-    with a pre-built settings interface.
-  status: 4
-  errors: []
-  versions:
-    all:
-    - 0.1.0-preview.4
-    - 0.1.0-preview.8
-    - 1.0.0
-    - 1.0.1
-    - 1.0.2
-    - 1.0.3
-    - 2.0.0
-    - 2.0.1
-    compatible:
-    - 2.0.1
-    verified: 2.0.1
-  dependencies: []
-  resolvedDependencies: []
-  keywords: []
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-  hideInEditor: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 637744099390000000
-  documentationUrl: 
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.com/Unity-Technologies/com.unity.settings-manager.git
-    revision: 9b7c12d04ef880168151c127fd6b37b5931197dc
-    path: 
-  unityLifecycle:
-    version: 2.0.1
-    nextVersion: 
-- packageId: com.unity.mobile.android-logcat@1.3.2
-  testable: 0
-  isDirectDependency: 0
-  version: 1.3.2
-  source: 1
-  resolvedPath: C:\Users\fabi2\OneDrive\Documents\GitHub\4D-Game\4D Game\Library\PackageCache\com.unity.mobile.android-logcat@1.3.2
-  assetPath: Packages/com.unity.mobile.android-logcat
-  name: com.unity.mobile.android-logcat
-  displayName: Android Logcat
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: asset
-  description: "Android Logcat package provides support for:\n - Android log messages\n
-    - Android application memory statistics\n - Android Screen Capture\n - Android
-    Screen Recorder\n - Stacktrace Utility\n\nClick the 'View documentation' link
-    above for more information.\n\nThe window can be accessed in Unity Editor via
-    'Window > Analysis > Android Logcat', or simply by pressing 'Alt+6' on Windows
-    or 'Option+6' on macOS. \n\nMake sure to have Android module loaded and switch
-    to Android build target in 'Build Settings' window if the menu doesn't exist."
-  status: 4
-  errors: []
-  versions:
-    all:
-    - 0.1.5-preview
-    - 0.2.7-preview
-    - 1.0.0
-    - 1.0.1-preview
-    - 1.0.3-preview
-    - 1.1.0
-    - 1.1.1
-    - 1.2.0-preview
-    - 1.2.0
-    - 1.2.1
-    - 1.2.2
-    - 1.2.3
-    - 1.3.2
-    compatible:
-    - 1.3.2
-    verified: 1.3.2
-  dependencies: []
-  resolvedDependencies: []
-  keywords:
-  - Mobile
-  - Android
-  - Logcat
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-  hideInEditor: 0
-  isAssetStorePackage: 0
-  datePublishedTicks: 637859722170000000
-  documentationUrl: 
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.com/Unity-Technologies/com.unity.mobile.logcat.git
-    revision: 3ac2137ceeb55e2f8b7e4ce15c940a7257591fd8
-    path: 
-  unityLifecycle:
-    version: 1.3.2
-    nextVersion: 
-- packageId: com.unity.adaptiveperformance@4.0.0
-  testable: 0
-  isDirectDependency: 0
-  version: 4.0.0
-  source: 1
-  resolvedPath: C:\Users\fabi2\OneDrive\Documents\GitHub\4D-Game\4D Game\Library\PackageCache\com.unity.adaptiveperformance@4.0.0
-  assetPath: Packages/com.unity.adaptiveperformance
-  name: com.unity.adaptiveperformance
-  displayName: Adaptive Performance
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: asset
-  description: 'The Adaptive Performance package provides an API to get feedback
-    about the thermal and power state of mobile devices, enabling applications to
-    make performance-relevant adaptions at runtime.
-
-
-    For instruction on how
-    to use samples, please read the documentation.
-
-
-    By installing this package,
-    you agree to the terms and conditions of the Unity End User License Agreement
-    found under "View licenses" above.'
-  status: 4
-  errors: []
-  versions:
-    all:
-    - 0.2.0-preview.1
-    - 1.0.0
-    - 1.0.1
-    - 1.1.0-preview.2
-    - 1.1.0-preview.3
-    - 1.1.0-preview.4
-    - 1.1.0-preview.5
-    - 1.1.0-preview.7
-    - 1.1.0
-    - 1.1.6
-    - 1.1.9
-    - 1.1.10
-    - 1.2.0
-    - 1.2.2
-    - 1.2.3
-    - 2.0.0-preview.1
-    - 2.0.0-preview.2
-    - 2.0.0-preview.4
-    - 2.0.0-preview.7
-    - 2.0.0-preview.8
-    - 2.0.0-preview.9
-    - 2.0.0-preview.10
-    - 2.0.0-preview.11
-    - 2.0.0
-    - 2.0.1
-    - 2.0.2
-    - 2.1.0
-    - 2.1.1
-    - 2.2.1
-    - 2.2.3
-    - 2.2.4
-    - 3.0.0-pre.2
-    - 3.0.0
-    - 3.0.2
-    - 3.0.3
-    - 4.0.0-pre.1
-    - 4.0.0
-    - 4.0.1
-    - 5.0.0-pre.1
-    - 5.0.0-pre.2
-    - 5.0.0-pre.3
-    - 5.0.0-pre.4
-    compatible:
-    - 4.0.0
-    - 4.0.1
-    - 5.0.0-pre.1
-    - 5.0.0-pre.2
-    - 5.0.0-pre.3
-    - 5.0.0-pre.4
-    verified: 4.0.1
-  dependencies:
-  - name: com.unity.subsystemregistration
-    version: 1.1.0
-  - name: com.unity.profiling.core
-    version: 1.0.0
-  resolvedDependencies:
-  - name: com.unity.subsystemregistration
-    version: 1.1.1
-  - name: com.unity.modules.subsystems
-    version: 1.0.0
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  - name: com.unity.profiling.core
-    version: 1.0.2
-  keywords:
-  - mobile
-  - adaptive
-  - performance
-  - utility
-  - utilities
-  - core
-  - samsung
-  - ap
-  - provider
-  - subsystem
-  - indexer
-  - scaler
-  - vrr
-  - boost
-  - profiles
-  - cluster
-  - clusterinfo
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-  hideInEditor: 0
-  isAssetStorePackage: 0
-  datePublishedTicks: 637794089490000000
-  documentationUrl: 
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.cds.internal.unity3d.com/unity/com.unity.adaptiveperformance.git
-    revision: e743558cd8d7f1f5ea8a461190c34f5d783b424d
-    path: 
-  unityLifecycle:
-    version: 4.0.0
-    nextVersion: 
-- packageId: com.unity.mobile.notifications@2.0.2
-  testable: 0
-  isDirectDependency: 0
-  version: 2.0.2
-  source: 1
-  resolvedPath: C:\Users\fabi2\OneDrive\Documents\GitHub\4D-Game\4D Game\Library\PackageCache\com.unity.mobile.notifications@2.0.2
-  assetPath: Packages/com.unity.mobile.notifications
-  name: com.unity.mobile.notifications
-  displayName: Mobile Notifications
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: asset
-  description: 'Mobile Notifications package adds support for scheduling local repeatable
-    or one-time notifications on iOS and Android.
-
-
-    Requires iOS 10 and Android
-    5.1 or above.'
-  status: 4
-  errors: []
-  versions:
-    all:
-    - 1.0.0-preview.4
-    - 1.0.0-preview.5
-    - 1.0.0-preview.7
-    - 1.0.0-preview.8
-    - 1.0.0-preview.9
-    - 1.0.0-preview.10
-    - 1.0.0-preview.13
-    - 1.0.0-preview.17
-    - 1.0.0-preview.21
-    - 1.0.0-preview.23
-    - 1.0.2
-    - 1.0.3-preview
-    - 1.0.3-preview.3
-    - 1.0.3-preview.4
-    - 1.0.3-preview.5
-    - 1.0.3-preview.6
-    - 1.0.3
-    - 1.0.4-preview.1
-    - 1.0.4-preview.2
-    - 1.0.4-preview.3
-    - 1.0.4-preview.4
-    - 1.0.4-preview.5
-    - 1.0.4-preview.6
-    - 1.0.4-preview.9
-    - 1.1.0-preview
-    - 1.2.0-preview
-    - 1.2.1-preview
-    - 1.3.0
-    - 1.3.2
-    - 1.4.1
-    - 1.4.2
-    - 1.4.3
-    - 1.4.4
-    - 2.0.0
-    - 2.0.1
-    - 2.0.2
-    - 2.1.0
-    compatible:
-    - 2.0.2
-    - 2.1.0
-    verified: 2.0.2
-  dependencies:
-  - name: com.unity.modules.androidjni
-    version: 1.0.0
-  resolvedDependencies:
-  - name: com.unity.modules.androidjni
-    version: 1.0.0
-  keywords:
-  - Android
-  - iOS
-  - Notifications
-  - Mobile
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-  hideInEditor: 0
-  isAssetStorePackage: 0
-  datePublishedTicks: 637885214440000000
-  documentationUrl: 
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.com/Unity-Technologies/com.unity.mobile.notifications.git
-    revision: 2653cecf26a3357212ae190bb3700610b905dc82
-    path: 
-  unityLifecycle:
-    version: 2.0.2
-    nextVersion: 
-- packageId: com.unity.services.core@1.4.3
-  testable: 0
-  isDirectDependency: 0
-  version: 1.4.3
-  source: 1
-  resolvedPath: C:\Users\fabi2\OneDrive\Documents\GitHub\4D-Game\4D Game\Library\PackageCache\com.unity.services.core@1.4.3
+  resolvedPath: C:\Users\fabi2\OneDrive\Documents\GitHub\4D-Game\4D Game\Library\PackageCache\com.unity.services.core@1.6.0
   assetPath: Packages/com.unity.services.core
   name: com.unity.services.core
   displayName: Services Core
@@ -3337,7 +3106,7 @@ m_ResolvedPackages:
 
     These are standardized and aim to unify the overall experience
     of working with Game Services SDK.'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -3360,11 +3129,9 @@ m_ResolvedPackages:
     - 1.6.0
     - 1.7.0
     compatible:
-    - 1.4.3
-    - 1.5.2
     - 1.6.0
     - 1.7.0
-    verified: 1.4.3
+    verified: 1.6.0
   dependencies:
   - name: com.unity.modules.unitywebrequest
     version: 1.0.0
@@ -3387,138 +3154,19 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 637959096350000000
+  datePublishedTicks: 638030857680000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git
-    revision: 145c9bbe93bde4784d4641e172be4ca40a3745fc
+    revision: 815a0c96703c69956fde4fc798e35dd8d0cc3af1
     path: 
   unityLifecycle:
-    version: 1.4.3
-    nextVersion: 
-- packageId: com.unity.subsystemregistration@1.1.1
-  testable: 0
-  isDirectDependency: 0
-  version: 1.1.1
-  source: 1
-  resolvedPath: C:\Users\fabi2\OneDrive\Documents\GitHub\4D-Game\4D Game\Library\PackageCache\com.unity.subsystemregistration@1.1.1
-  assetPath: Packages/com.unity.subsystemregistration
-  name: com.unity.subsystemregistration
-  displayName: Subsystem Registration
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: asset
-  description: Provides internal registration mechanism for standalone subsystems. 
-    It allows a standalone subsystem to inform the Subsystem Manager of its existence.
-  status: 4
-  errors: []
-  versions:
-    all:
-    - 1.0.0-preview.4
-    - 1.0.4
-    - 1.0.5
-    - 1.0.6
-    - 1.1.0
-    - 1.1.1
-    - 1.1.2
-    compatible:
-    - 1.1.1
-    - 1.1.2
-    verified: 1.1.2
-  dependencies:
-  - name: com.unity.modules.subsystems
-    version: 1.0.0
-  resolvedDependencies:
-  - name: com.unity.modules.subsystems
-    version: 1.0.0
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  keywords:
-  - subsystem
-  - registration
-  - internal
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-  hideInEditor: 0
-  isAssetStorePackage: 0
-  datePublishedTicks: 637703478850000000
-  documentationUrl: 
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.cds.internal.unity3d.com/unity/com.unity.subsystemregistration.git
-    revision: 0aafce17de537879b970cedf309038c8d227ec05
-    path: 
-  unityLifecycle:
-    version: 1.1.1
-    nextVersion: 
-- packageId: com.unity.profiling.core@1.0.2
-  testable: 0
-  isDirectDependency: 0
-  version: 1.0.2
-  source: 1
-  resolvedPath: C:\Users\fabi2\OneDrive\Documents\GitHub\4D-Game\4D Game\Library\PackageCache\com.unity.profiling.core@1.0.2
-  assetPath: Packages/com.unity.profiling.core
-  name: com.unity.profiling.core
-  displayName: Unity Profiling Core API
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: asset
-  description: The Unity Profiling Core package provides an API for code instrumentation
-    markup, and for profiling statistic collection.
-  status: 4
-  errors: []
-  versions:
-    all:
-    - 0.1.0-preview.1
-    - 0.2.0-preview.1
-    - 0.2.1-preview.1
-    - 1.0.0-pre.1
-    - 1.0.0
-    - 1.0.2
-    compatible:
-    - 1.0.2
-    verified: 1.0.2
-  dependencies: []
-  resolvedDependencies: []
-  keywords:
-  - profiler
-  - profiling
-  - api
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-  hideInEditor: 0
-  isAssetStorePackage: 0
-  datePublishedTicks: 637828752310000000
-  documentationUrl: 
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.cds.internal.unity3d.com/unity/profiler.git
-    revision: 2189ba14439d76a4083f59fae87163b4bdfd49c2
-    path: 
-  unityLifecycle:
-    version: 1.0.2
+    version: 1.6.0
     nextVersion: 
 - packageId: com.unity.nuget.newtonsoft-json@3.0.2
   testable: 0
@@ -3545,7 +3193,7 @@ m_ResolvedPackages:
 
     To avoid assembly clashes, please use this
     package if you intend to use Newtonsoft Json.'
-  status: 4
+  status: 0
   errors: []
   versions:
     all:
@@ -3575,6 +3223,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
+    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 637846828220000000

@@ -1,0 +1,4 @@
+#Thu Jan 12 00:27:03 EET 2023
+base.0=C\:\\Users\\fabi2\\OneDrive\\Documents\\GitHub\\4D-Game\\4D Game\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
