@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "applicationId": "com.Project4D.Game4D",
+  "variantType": "BASE_APK",
+  "elements": [
+    {
+      "outputType": {
+        "type": "MERGED_MANIFESTS"
+      },
+      "apkData": {
+        "type": "MAIN",
+        "splits": [],
+        "versionCode": 2,
+        "versionName": "0.22",
+        "outputFile": "launcher-release.apk",
+        "fullName": "release",
+        "baseName": "release",
+        "dirName": ""
+      },
+      "path": "AndroidManifest.xml",
+      "properties": {
+        "packageId": "com.Project4D.Game4D",
+        "split": "",
+        "minSdkVersion": "23"
+      }
+    }
+  ]
+}

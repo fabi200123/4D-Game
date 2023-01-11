@@ -207,12 +207,12 @@ namespace AlexisGea {
 				slider[Axis4D.yz] += 0.45f;
 				slider[Axis4D.zw] += 0.5f;
 
-				oldPosition[Axis4D.xy] = rotation[Axis4D.xy] = slider[Axis4D.xy];
-				oldPosition[Axis4D.xz] = rotation[Axis4D.xz] = slider[Axis4D.xz];
-				oldPosition[Axis4D.xw] = rotation[Axis4D.xw] = slider[Axis4D.xw];
-				oldPosition[Axis4D.yw] = rotation[Axis4D.yw] = slider[Axis4D.yw];
-				oldPosition[Axis4D.yz] = rotation[Axis4D.yz] = slider[Axis4D.yz];
-				oldPosition[Axis4D.zw] = rotation[Axis4D.zw] = slider[Axis4D.zw];
+				oldPosition[Axis4D.xy] = rotation[Axis4D.xy] = slider[Axis4D.xy] / 720;
+				oldPosition[Axis4D.xz] = rotation[Axis4D.xz] = slider[Axis4D.xz] / 720;
+				oldPosition[Axis4D.xw] = rotation[Axis4D.xw] = slider[Axis4D.xw] / 720;
+				oldPosition[Axis4D.yw] = rotation[Axis4D.yw] = slider[Axis4D.yw] / 720;
+				oldPosition[Axis4D.yz] = rotation[Axis4D.yz] = slider[Axis4D.yz] / 720;
+				oldPosition[Axis4D.zw] = rotation[Axis4D.zw] = slider[Axis4D.zw] / 720;
 
 				movement = 0.015f;
 			}
